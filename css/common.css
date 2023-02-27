@@ -22,3 +22,13 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap:50px;
+}
+.flex li img{
+  width: 400px;
+  max-height: 300px;
+}
