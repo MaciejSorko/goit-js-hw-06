@@ -11,13 +11,11 @@ const verification = (e) => {
         let obj = {
             email: inputEmail.value,
             password: inputPassword.value,
-            reset: function () {
-                inputEmail.value = "";
-                inputPassword.value = "";
-            }
+            
         };
         form.addEventListener("submit", obj.reset);
         console.log(obj);
+        form.reset();
       };
       
     }
