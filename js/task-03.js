@@ -21,3 +21,4 @@ valArr.forEach((element) => {
     `<li> <img src="${element[0]}" alt="${element[1]}"> </li>`
   );
 });
+gallery.classList.add("flex");
