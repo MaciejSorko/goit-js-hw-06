@@ -13,7 +13,7 @@ const verification = (e) => {
             password: inputPassword.value,
             
         };
-        form.addEventListener("submit", obj.reset);
+        
         console.log(obj);
         form.reset();
       };

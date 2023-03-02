@@ -14,11 +14,8 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-const valArr = images.map((e) => Object.values(e));
-valArr.forEach((element) => {
-  gallery.insertAdjacentHTML(
-    "afterbegin",
-    `<li> <img src="${element[0]}" alt="${element[1]}"> </li>`
-  );
-});
-gallery.classList.add("flex");
+const markup = images
+  .map((e) => `<li> <img src="${e.url}" alt="${e.alt}"> </li> `)
+  .join("");
+gallery.insertAdjacentHTML("beforeend", markup);
+ gallery.classList.add("flex");
